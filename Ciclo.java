@@ -67,7 +67,42 @@ public class Ciclo {
 
             if (opcion == 3 ) {
 
+                int posicion = 0; // Posicion del numero primo a mostrar
 
+                int contador = 0; // contador de numeros primos
+
+                int numero = 2; // numero a evaluar
+
+                int divisor; // divisor para evaluar si el numero es primo
+
+                System.out.println("Ingrese el N-Esimo numero primo que quiere mostrar "); // cantidad de numero a mostrar
+                posicion = sc.nextInt();
+
+                while (contador < posicion) { // ciclo para encontrar el numero primo en la posicion indicada
+
+                    divisor = 0;
+                    
+                    for (int i = 1; i <= numero; i++) { // ciclo para evaluar si el numero es primo
+                        
+                        if (numero % i == 0) { // si el numero es divisible por i, entonces es un divisor
+                            
+                            divisor++;
+                            
+                        }
+                        
+                    }
+
+                    if (divisor == 2) { // si el numero tiene solo 2 divisores, 1 y el mismo, entonces es primo
+                        
+                        contador++;
+
+                    }
+
+                    numero++; // incrementa el numero para evaluar el siguiente numero
+
+                }
+
+                System.out.println("El numero primo es: " + (numero - 1)); // muestra el numero primo encontrado
 
             }
             else if (opcion == 4) {
