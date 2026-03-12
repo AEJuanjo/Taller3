@@ -65,7 +65,7 @@ public class Ciclo {
 
             }
 
-            if (opcion == 3 ) {
+            else if (opcion == 3 ) {
 
                 int posicion = 0; // Posicion del numero primo a mostrar
 
