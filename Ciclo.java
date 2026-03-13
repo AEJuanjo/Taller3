@@ -11,12 +11,36 @@ public class Ciclo {
         int opcion = 0;
 
         while(opcion !=1) {
-            System.out.println("=============MENU=============");
-            System.out.println("1. Salir");
-            System.out.println("2. Suma N-avo número de fibonacci");
-            System.out.println("3. N-avo numero primo");
-            System.out.println("4. Raíces ecuación cuadratica");
-            System.out.println("5. Promedio n numeros");
+ 
+        System.out.println("╔╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╗");
+        System.out.println("╠╬╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╬╣");
+        System.out.println("╠╣                                                            ╠╣");
+        System.out.println("╠╣                       MENU DE CICLOS                       ╠╣");
+        System.out.println("╠╣                                                            ╠╣");
+        System.out.println("╠╣                                                            ╠╣");
+        System.out.println("╠╣                                                            ╠╣");
+        System.out.println("╠╣                         1. Salir                           ╠╣");
+        System.out.println("╠╣                                                            ╠╣");
+        System.out.println("╠╣                                                            ╠╣");
+        System.out.println("╠╣              2. Suma N-avo número de fibonacci             ╠╣");
+        System.out.println("╠╣                                                            ╠╣");
+        System.out.println("╠╣                                                            ╠╣");
+        System.out.println("╠╣                   3. N-avo numero primo                    ╠╣");
+        System.out.println("╠╣                                                            ╠╣");
+        System.out.println("╠╣                                                            ╠╣");
+        System.out.println("╠╣               4. Raíces ecuación cuadratica                ╠╣");
+        System.out.println("╠╣                                                            ╠╣");
+        System.out.println("╠╣                                                            ╠╣");
+        System.out.println("╠╣                    5. Promedio n numeros                   ╠╣");
+        System.out.println("╠╣                                                            ╠╣");
+        System.out.println("╠╣                                                            ╠╣");
+        System.out.println("╠╣                                                            ╠╣");
+        System.out.println("╠╣                                                            ╠╣");
+        System.out.println("╠╣                                                            ╠╣");
+        System.out.println("╠╣                                                            ╠╣");
+        System.out.println("╠╣                                                            ╠╣");
+        System.out.println("╠╬╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╦╬╣");
+        System.out.println("╚╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╩╝");
 
             opcion = sc.nextInt();
             
@@ -132,7 +156,16 @@ public class Ciclo {
             }
             }
             else if (opcion == 5) {
+             System.out.println("Ingrese la cantidad de numeros: ");
+             int n = sc.nextInt();
+             double suma = 0;
+             double promedio;
+                for (int i = 1; i <= n; i++){
+                    suma = suma + i;
+                }
+            promedio = suma / 2;    
 
+                System.out.println("Promedio de los primeros " + n + " numeros es: " + promedio);
 
                 
 
@@ -150,6 +183,10 @@ public class Ciclo {
             System.out.println("Error: Debe ingresar un valor válido."); // mensaje de error si el usuario ingresa un valor no entero
 
         }
+
+    }
+        
+}
 
     }
         
