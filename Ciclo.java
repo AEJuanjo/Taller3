@@ -48,44 +48,26 @@ public class Ciclo {
 
                 // V.E
 
-                int numeroUno = 0; // cantidad de numero a mostrar
-
-                int a = 0, b = 1; // numeros de la serie
-
-                int suma = 0; // suma total de la serie
+                int a = 0, b = 1, c = 0, n; // a y b son los dos primeros numeros de la serie de Fibonacci, c es el siguiente numero de la serie, n es la cantidad de numeros a mostrar
 
                 // V.S
 
                 // V.A
 
-                int numeroSiguiente = 0; // numero siguiente de la serie
-
                 // PROCESO
 
-                System.out.println("Ingrese un numero: "); // cantidad de numero a mostrar
-                numeroUno = sc.nextInt();
+                System.out.println("Ingrese el N-Esimo numero de Fibonacci que quiere mostrar: "); // cantidad de numero a mostrar
+                n = sc.nextInt();
 
-                // El siguiente numero = a la suma de los dos anteriores
+                do { // ciclo para mostrar los numeros de la serie de Fibonacci hasta el N-Esimo numero
+                  
+                System.out.println(a);
 
-                for (int i = 0; i < numeroUno; i++) { // ciclo para mostrar la serie de fibonacci
+                c = a + b;
+                a = b;
+                b = c;
 
-                    System.out.println(" | ------ Fibonacci: " + a + " ------ | ");
-
-                    suma += a;
-
-                    System.out.println(" | ------ Suma acumulada: " + suma + " ------ | ");
-
-                    numeroSiguiente = a + b;
-
-                    a = b;
-
-                    b = numeroSiguiente;
-
-                }
-
-                System.out.println(" | --------------------------------------| ");
-
-                System.out.println(" | ------La Suma total: " + suma + " ------ | "); // muestra la suma total de la serie de fibonacci
+                } while (--n > 0); // decrementa n para mostrar el siguiente numero de la serie de Fibonacci hasta llegar a 0
 
             }
 
