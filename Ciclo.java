@@ -73,42 +73,37 @@ public class Ciclo {
 
             else if (opcion == 3 ) {
 
-                int posicion = 0; // Posicion del numero primo a mostrar
+                // V.E
 
-                int contador = 0; // contador de numeros primos
+                int divisores = 2, n, contador = 2; // divisores es la cantidad de divisores que tiene el numero, n es el numero a evaluar, contador es la cantidad de numeros primos encontrados
 
-                int numero = 2; // numero a evaluar
+                // V.S
 
-                int divisor; // divisor para evaluar si el numero es primo
+                // V.A
 
-                System.out.println("Ingrese el N-Esimo numero primo que quiere mostrar "); // cantidad de numero a mostrar
-                posicion = sc.nextInt();
+                // PROCESO
 
-                while (contador < posicion) { // ciclo para encontrar el numero primo en la posicion indicada
+                System.out.println("Ingrese el N-Esimo numero primo que quiere mostrar: "); // cantidad de numero a mostrar
+                n = sc.nextInt();
 
-                    divisor = 0;
+                while (contador < n) {
                     
-                    for (int i = 1; i <= numero; i++) { // ciclo para evaluar si el numero es primo
+                    if (n % contador == 0) {
                         
-                        if (numero % i == 0) { // si el numero es divisible por i, entonces es un divisor
-                            
-                            divisor++;
-                            
-                        }
-                        
-                    }
-
-                    if (divisor == 2) { // si el numero tiene solo 2 divisores, 1 y el mismo, entonces es primo
-                        
-                        contador++;
+                        divisores++;
+                        break;
 
                     }
-
-                    numero++; // incrementa el numero para evaluar el siguiente numero
+                    contador++;
 
                 }
+                if (divisores > 2) {
+                    
+                    System.out.println("El numero " + n + " no es primo");
 
-                System.out.println("El numero primo es: " + (numero - 1)); // muestra el numero primo encontrado
+                } else {
+                    System.out.println("El numero " + n + " es primo");
+                }
 
             }
             else if (opcion == 4) {
