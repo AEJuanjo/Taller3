@@ -99,13 +99,6 @@ java Main
 
 ---
 
-## 👥 Equipo
-
-- Juan Jose Alzate
-- Juan Pablo Vélez Lopera
-
----
-
 ## 🛡️ Manejo de errores
 
 >El programa debe incluir validación de datos y manejo de excepciones utilizando try-catch para evitar fallos durante la ejecución.
@@ -122,6 +115,11 @@ try {
 ```
 
 ---
+
+## 👥 Equipo
+
+- Juan Jose Alzate
+- Juan Pablo Vélez Lopera
 
 ---
 
