@@ -129,6 +129,7 @@ A continuación se presentan los recursos utilizados como apoyo para el desarrol
 
 ### 🔤 Recursos visuales y ASCII
 
+- 🔗 [Diapositivas Taller 3](https://www.canva.com/design/DAHFFiNky-Q/_ayYj7jAWvMhfgK6SeKd2A/edit?utm_content=DAHFFiNky-Q&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 - 🔗 [Generador de bordes ASCII](https://www.asciiart.eu/search?q=borders)
 - 🔗 [AsciiMoji (emojis en texto)](https://asciimoji.com)
 - 🔗 [Colección de ASCII Art](https://gist.github.com/xaca/7ca5f8a378686a119e8796a20f3f992c)
