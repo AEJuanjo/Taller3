@@ -49,20 +49,31 @@ public class Ciclo {
                     System.out.print("Ingrese el N: ");
                     int n = sc.nextInt();
 
-                    BigInteger a = BigInteger.ZERO;
-                    BigInteger b = BigInteger.ONE;
-                    BigInteger c;
+                    if (n > 92) {
 
-                    System.out.println("+------------------------------+");
+                        System.out.println("ERROR: El número es mas grande de lo permitido.");
 
-                    for (int i = 0; i < n; i++) {
-                        System.out.println("| " + a);
-                        c = a.add(b);
-                        a = b;
-                        b = c;
+                        System.out.println("Máximo permitido: 92");
+
+                    } else if (n < 0) {
+
+                        System.out.println("ERROR: No se permiten números negativos.");
+
+                    } else {
+
+                        long a = 0, b = 1, c;
+
+                        System.out.println("+------------------------------+");
+
+                        for (int i = 0; i < n; i++) {
+                            System.out.println("| " + a);
+                            c = a + b;
+                            a = b;
+                            b = c;
+                        }
+
+                        System.out.println("+------------------------------+");
                     }
-
-                    System.out.println("+------------------------------+");
 
                 } else if (opcion == 2) {
 
